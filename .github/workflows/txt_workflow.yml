@@ -3,7 +3,7 @@ name: Bot Auto Tweet - Txt File
 on:
   schedule:
     # Menjalankan setiap 4 jam sekali pada menit ke-30
-    - cron: '30 */4 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
