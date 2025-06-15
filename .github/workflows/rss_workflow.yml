@@ -9,24 +9,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    # --- TAMBAHKAN BLOK INI UNTUK MEMBERI IZIN MENULIS ---
+    permissions:
+      contents: write
+
     steps:
-      # Langkah 1: Ambil kode dari repositori
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # Langkah 2: Siapkan lingkungan Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # Langkah 3: Instal semua library yang dibutuhkan
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install tweepy requests beautifulsoup4 feedparser
 
-      # Langkah 4: Jalankan bot untuk mengecek dan memposting RSS
       - name: Run RSS Bot
         run: python bot_rss.py
         env:
@@ -34,18 +35,14 @@ jobs:
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-
-      # --- LANGKAH BARU UNTUK MENYIMPAN RIWAYAT ---
-      # Langkah 5: Konfigurasi Git dengan identitas bot
+          
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # Langkah 6: Commit dan Push perubahan pada file riwayat
       - name: Commit and push changes
         run: |
-          # Cek apakah ada perubahan pada file posted_rss_links.txt
           if [[ -n $(git status --porcelain posted_rss_links.txt) ]]; then
             git add posted_rss_links.txt
             git commit -m "Update posted RSS links history"
