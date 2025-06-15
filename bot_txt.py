@@ -7,7 +7,7 @@ import sys
 import tempfile
 
 # Konfigurasi
-TWEETS_FILE = 'tweets_media.txt'
+TWEETS_FILE = 'tweet.txt'
 MAX_TWEET_LENGTH = 250
 TRENDING_LIMIT = 5
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
