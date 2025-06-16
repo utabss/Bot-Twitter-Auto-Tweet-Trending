@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install tweepy requests beautifulsoup4
       - name: Run Txt Bot
-        run: python bot_txt.py
+        run: python dist/bot_txt.py
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
