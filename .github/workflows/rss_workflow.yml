@@ -20,7 +20,7 @@ jobs:
       - name: Run RSS Bot
         # --- PERBAIKAN DI SINI ---
         # Menjalankan skrip langsung dari direktori utama, bukan dari /dist
-        run: python bot_rss.py
+        run: python dist/bot_rss.py
         env:
           BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
