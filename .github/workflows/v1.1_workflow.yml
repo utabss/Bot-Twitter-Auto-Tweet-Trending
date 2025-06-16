@@ -18,7 +18,7 @@ jobs:
       - name: Run Bot V1.1
         # --- PERBAIKAN DI SINI ---
         # Menjalankan skrip langsung dari direktori utama, bukan dari /dist
-        run: python bot_v1.1.py
+        run: python dist/bot_v1.1.py
         env:
           BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
