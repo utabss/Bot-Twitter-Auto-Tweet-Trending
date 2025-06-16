@@ -18,7 +18,7 @@ jobs:
       - name: Run Txt Bot
         # --- PERBAIKAN DI SINI ---
         # Menjalankan skrip langsung dari direktori utama, bukan dari /dist
-        run: python bot_txt.py
+        run: python dist/bot_txt.py
         env:
           BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
