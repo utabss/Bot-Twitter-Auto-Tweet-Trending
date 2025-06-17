@@ -20,7 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install tweepy requests beautifulsoup4
       - name: Run Image Tweet Bot
-        run: python bot_tweet_image.py
+        run: python dist/bot_tweet_image.py
         env:
           # --- PERUBAHAN DI SINI: Menambahkan secret lisensi ---
           BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
