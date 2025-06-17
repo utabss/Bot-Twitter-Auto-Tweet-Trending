@@ -2,7 +2,7 @@ name: Bot Auto Tweet Gambar
 on:
   schedule:
     # Contoh: Berjalan setiap 3 jam
-    - cron: '0 */3 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
