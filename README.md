@@ -48,6 +48,14 @@ Anda perlu menambahkan *secrets* berikut:
     * `TWITTER_ACCESS_TOKEN_SECRET`
 * **Kunci Lisensi Bot**:
     * `BOT_LICENSE_EMAIL`: Lisensi berupa email ketika pembelian di: https://lynk.id/belajaradmobpemula/62e39l28yd2o
+ 
+## Kebijakan Lisensi
+
+Lisensi yang Anda beli bersifat personal dan terikat pada email pembelian Anda.
+
+* **Pemakaian Tak Terbatas (Unlimited)**: Satu lisensi dapat digunakan untuk mengotomatisasi akun Twitter dalam jumlah tidak terbatas, selama semua bot dijalankan dari dalam repositori GitHub yang sama milik pemegang lisensi.
+* **Larangan Berbagi atau Menjual Kembali**: Lisensi ini tidak dapat dipindahtangankan, dibagikan, atau dijual kembali kepada pihak lain dalam bentuk apapun.
+* **Hak Pengembang**: Pengembang memiliki hak penuh untuk menonaktifkan (ban) lisensi secara permanen dan tanpa pengembalian dana jika terdeteksi adanya pelanggaran, seperti upaya berbagi atau menjual kembali lisensi.
 
 ---
 ---
@@ -100,3 +108,12 @@ You need to add the following secrets:
     * `TWITTER_API_SECRET`
     * `TWITTER_ACCESS_TOKEN`
     * `TWITTER_ACCESS_TOKEN_SECRET`
+ 
+## License Policy
+
+The license you purchase is personal and is bound to your purchase email.
+
+* **Unlimited Use**: A single license can be used to automate an unlimited number of Twitter accounts, as long as all bots are run from within the same GitHub repository belonging to the license holder.
+* **No Sharing or Reselling**: This license is non-transferable and may not be shared with or resold to any other party in any form.
+* **Developer's Rights**: The developer reserves the full right to permanently deactivate (ban) a license without a refund if any violation is detected, such as attempts to share or resell the license.
+
