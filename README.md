@@ -47,7 +47,7 @@ Anda perlu menambahkan *secrets* berikut:
     * `TWITTER_ACCESS_TOKEN`
     * `TWITTER_ACCESS_TOKEN_SECRET`
 * **Kunci Lisensi Bot**:
-    * `BOT_LICENSE_EMAIL`: Lisensi berupa email ketika pembelian di: https://lynk.id/belajaradmobpemula/62e39l28yd2o
+    * `BOT_LICENSE_EMAIL`: Lisensi berupa email ketika pembelian di: [Beli Lisensi Hanya Rp 265.000](https://lynk.id/belajaradmobpemula/62e39l28yd2o)
  
 ## Kebijakan Lisensi
 
@@ -102,7 +102,7 @@ This bot requires secrets to function. Go to your repository's **Settings > Secr
 
 You need to add the following secrets:
 * **Bot License Key**:
-    * `BOT_LICENSE_EMAIL`: License in the form of an email upon purchase at: https://lynk.id/belajaradmobpemula/62e39l28yd2o
+    * `BOT_LICENSE_EMAIL`: License in the form of an email upon purchase at: [Buy License $17](https://lynk.id/belajaradmobpemula/62e39l28yd2o)
 * **Twitter API Keys**:
     * `TWITTER_API_KEY`
     * `TWITTER_API_SECRET`
