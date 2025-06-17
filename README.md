@@ -58,6 +58,10 @@ Lisensi yang Anda beli bersifat personal dan terikat pada email pembelian Anda.
 * **Hak Pengembang**: Pengembang memiliki hak penuh untuk menonaktifkan (ban) lisensi secara permanen dan tanpa pengembalian dana jika terdeteksi adanya pelanggaran, seperti upaya berbagi atau menjual kembali lisensi.
 
 ---
+
+Twitter Demo: [Drakorku](https://x.com/Drakorku99)
+
+---
 ---
 
 # Bot Auto Tweet Trending V2 (English Version)
@@ -117,3 +121,7 @@ The license you purchase is personal and is bound to your purchase email.
 * **No Sharing or Reselling**: This license is non-transferable and may not be shared with or resold to any other party in any form.
 * **Developer's Rights**: The developer reserves the full right to permanently deactivate (ban) a license without a refund if any violation is detected, such as attempts to share or resell the license.
 
+
+---
+
+Twitter Demo: [Drakorku](https://x.com/Drakorku99)
