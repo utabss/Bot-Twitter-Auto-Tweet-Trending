@@ -6,6 +6,8 @@ Proyek ini terbagi menjadi **tiga bot utama** yang dapat dijalankan secara indep
 1.  **`bot_v1.1.py`**: Bot orisinal dengan kemampuan parsing file `.txt` yang kompleks (mendukung format multi-baris dengan `text:`, `media:`, `hashtags:`).
 2.  **`bot_rss.py`**: Bot cerdas yang memantau RSS feed dan secara otomatis memposting artikel baru, lengkap dengan gambar.
 3.  **`bot_txt.py`**: Bot sederhana yang memposting konten secara acak dari file `.txt` dengan format "satu baris satu tweet".
+4.  **`bot_tweet_image.py`**: Bot cerdas yang memposting konten secara acak dari file `.txt` di tambah dengan gambar dari file `.txt`.
+5.  **`scrape_action.py`**: Bot Cerdas yang bisa mengambil url/link gambar dari Pixabay dan google untuk di jadikan konten Tweet.
 
 ---
 
@@ -34,6 +36,7 @@ Pastikan file-file berikut ada di dalam repositori Anda untuk fungsionalitas pen
     * `tweets_media.txt`, `trending_limit_config.txt`, `target_trending_botv1.txt` (Set Up Untuk Bot Auto Tweet Trending V1.1)
     * `tweet.txt`, `txt_trending_limit.txt`, `target_trending_bottxt.txt` (Set Up Untuk Bot Auto Tweet - Txt File)
     * `rss_config.txt`, `posted_rss_links.txt`, `rss_trending_limit.txt`, `target_trending_botrss.txt` (Set Up Untuk Bot Auto Tweet - RSS Feed)
+    * `image_list.txt`, `tweets_image.txt`, `trending_limit_botimage.txt`, `target_trending_botimage.txt` (Set Up Untuk Bot Tweet + Gambar)
    
 
 ### Pengaturan GitHub Secrets
@@ -72,6 +75,8 @@ This project is divided into **three main, independent bots**:
 1.  **`bot_v1.1.py`**: The original bot with a complex `.txt` file parser (supporting multi-line formats with `text:`, `media:`, `hashtags:`).
 2.  **`bot_rss.py`**: An intelligent bot that monitors an RSS feed and automatically posts new articles, complete with images.
 3.  **`bot_txt.py`**: A simple bot that posts random content from a text file using a "one line, one tweet" format.
+4.  **`bot_tweet_image.py`**: An intelligent bot that posts random content from a .txt file, paired with an image from a separate .txt file.
+5.  **`scrape_action.py`**: An intelligent bot that can scrape image URLs/links from both Pixabay and Google to be used as tweet content.
 
 ---
 
@@ -100,6 +105,7 @@ Ensure the following files are present in your repository for full functionality
     * `tweets_media.txt`, `trending_limit_config.txt`, `target_trending_botv1.txt` (Set Up For Bot Auto Tweet Trending V1.1)
     * `tweet.txt`, `txt_trending_limit.txt`, `target_trending_bottxt.txt` (Set Up For Bot Auto Tweet - Txt File)
     * `rss_config.txt`, `posted_rss_links.txt`, `rss_trending_limit.txt`, `target_trending_botrss.txt` (Set Up For Bot Auto Tweet - RSS Feed)
+    * `image_list.txt`, `tweets_image.txt`, `trending_limit_botimage.txt`, `target_trending_botimage.txt` (Set Up For Bot Tweet + Gambar)
 
 ### GitHub Secrets Setup
 This bot requires secrets to function. Go to your repository's **Settings > Secrets and variables > Actions**.
