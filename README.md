@@ -51,6 +51,9 @@ Anda perlu menambahkan *secrets* berikut:
     * `TWITTER_ACCESS_TOKEN_SECRET`
 * **Kunci Lisensi Bot**:
     * `BOT_LICENSE_EMAIL`: Lisensi berupa email ketika pembelian di: [Beli Lisensi Hanya Rp 265.000](https://lynk.id/belajaradmobpemula/62e39l28yd2o)
+
+* **Kunci Pixabay API**:
+   * `PIXABAY_API_KEY`
  
 ## Kebijakan Lisensi
 
@@ -118,6 +121,9 @@ You need to add the following secrets:
     * `TWITTER_API_SECRET`
     * `TWITTER_ACCESS_TOKEN`
     * `TWITTER_ACCESS_TOKEN_SECRET`
+ 
+* **Pixabay API Key**:
+   * `PIXABAY_API_KEY`
  
 ## License Policy
 
