@@ -1,0 +1,8 @@
+{
+  "scrape_url": "https://www.trends24.in/indonesia",
+  "jumlah_hashtag_tambahan": 4,
+  "prompt_gemini": "Buat sebuah kalimat berita singkat yang sangat membuat penasaran dalam bentuk tweet (maksimal 150 karakter) tentang topik '{keyword}'. Jangan berikan kesimpulan. Jangan gunakan hashtag dalam jawabanmu.",
+  "traffic_link": "Baca Selengkapnya: 👉👉 https://LINK-SITUS-ANDA.com",
+  "manual_hashtags": ["#berita", "#hotnews", "#news"],
+  "gagal_scrape_gambar_tetap_posting": true
+}
