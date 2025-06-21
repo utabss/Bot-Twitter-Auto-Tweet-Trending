@@ -8,6 +8,7 @@ Proyek ini terbagi menjadi **tiga bot utama** yang dapat dijalankan secara indep
 3.  **`bot_txt.py`**: Bot sederhana yang memposting konten secara acak dari file `.txt` dengan format "satu baris satu tweet".
 4.  **`bot_tweet_image.py`**: Bot cerdas yang memposting konten secara acak dari file `.txt` di tambah dengan gambar dari file `.txt`.
 5.  **`scrape_action.py`**: Bot Cerdas yang bisa mengambil url/link gambar dari Pixabay dan google untuk di jadikan konten Tweet.
+6.  **`bot_autonews.py`**: Bot Cerdas yang mengambil data trends dari twitter/x dan di olah menggunakan AI sehingga menjadi konten tweet Berita dan sangat potensi menjadikan Konten tweet kita viral.
 
 ---
 
@@ -80,6 +81,7 @@ This project is divided into **three main, independent bots**:
 3.  **`bot_txt.py`**: A simple bot that posts random content from a text file using a "one line, one tweet" format.
 4.  **`bot_tweet_image.py`**: An intelligent bot that posts random content from a .txt file, paired with an image from a separate .txt file.
 5.  **`scrape_action.py`**: An intelligent bot that can scrape image URLs/links from both Pixabay and Google to be used as tweet content.
+6.  **`bot_autonews.py`**: An intelligent bot that takes trending data from Twitter/X and processes it using AI to create news tweet content with high potential to go viral.
 
 ---
 
