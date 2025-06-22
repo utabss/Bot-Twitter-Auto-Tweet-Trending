@@ -31,13 +31,14 @@ Proyek ini terbagi menjadi **tiga bot utama** yang dapat dijalankan secara indep
 
 ### Struktur File Penting
 Pastikan file-file berikut ada di dalam repositori Anda untuk fungsionalitas penuh:
-* **Skrip Bot**: `bot_v1.1.py`, `bot_rss.py`, `bot_txt.py`.
-* **File Jadwal**: Di dalam `.github/workflows/`, terdapat `v1.1_workflow.yml`, `rss_workflow.yml`, `txt_workflow.yml`.
+* **Skrip Bot**: `bot_v1.1.py`, `bot_rss.py`, `bot_txt.py`,`bot_autonews.py`,`bot_tweet_image.py`.
+* **File Jadwal**: Di dalam `.github/workflows/`, terdapat `v1.1_workflow.yml`, `rss_workflow.yml`, `txt_workflow.yml`,`autonews_workflow.yml`.
 * **File Data & Konfigurasi**:
-    * `tweets_media.txt`, `trending_limit_config.txt`, `target_trending_botv1.txt` (Set Up Untuk Bot Auto Tweet Trending V1.1)
-    * `tweet.txt`, `txt_trending_limit.txt`, `target_trending_bottxt.txt` (Set Up Untuk Bot Auto Tweet - Txt File)
-    * `rss_config.txt`, `posted_rss_links.txt`, `rss_trending_limit.txt`, `target_trending_botrss.txt` (Set Up Untuk Bot Auto Tweet - RSS Feed)
-    * `image_list.txt`, `tweets_image.txt`, `trending_limit_botimage.txt`, `target_trending_botimage.txt` (Set Up Untuk Bot Tweet + Gambar)
+    * `tweets_media.txt`, `config/v1.1_config.json` (Set Up Untuk Bot Auto Tweet Trending V1.1)
+    * `tweet.txt`, `config/bottext_config.json` (Set Up Untuk Bot Auto Tweet - Txt File)
+    * `posted_rss_links.txt`, `config/botrss_config.json` (Set Up Untuk Bot Auto Tweet - RSS Feed)
+    * `image_list.txt`, `tweets_image.txt`, `config/botimage_config.json` (Set Up Untuk Bot Tweet + Gambar)
+    * `config/autonews_config.json` (Set Up Untuk Auto Tweet News AI)
    
 
 ### Pengaturan GitHub Secrets
@@ -104,13 +105,14 @@ This project is divided into **three main, independent bots**:
 
 ### Important File Structure
 Ensure the following files are present in your repository for full functionality:
-* **Bot Scripts**: `bot_v1.1.py`, `bot_rss.py`, `bot_txt.py`.
-* **Workflow Files**: Inside `.github/workflows/`, you should have `v1.1_workflow.yml`, `rss_workflow.yml`, `txt_workflow.yml`.
+* **Bot Scripts**: `bot_v1.1.py`, `bot_rss.py`, `bot_txt.py`,`bot_autonews.py`,`bot_tweet_image.py`.
+* **Workflow Files**: Inside `.github/workflows/`, you should have `v1.1_workflow.yml`, `rss_workflow.yml`, `txt_workflow.yml`, `autonews_workflow.yml`.
 * **Data & Config Files**:
-    * `tweets_media.txt`, `trending_limit_config.txt`, `target_trending_botv1.txt` (Set Up For Bot Auto Tweet Trending V1.1)
-    * `tweet.txt`, `txt_trending_limit.txt`, `target_trending_bottxt.txt` (Set Up For Bot Auto Tweet - Txt File)
-    * `rss_config.txt`, `posted_rss_links.txt`, `rss_trending_limit.txt`, `target_trending_botrss.txt` (Set Up For Bot Auto Tweet - RSS Feed)
-    * `image_list.txt`, `tweets_image.txt`, `trending_limit_botimage.txt`, `target_trending_botimage.txt` (Set Up For Bot Tweet + Gambar)
+    * `tweets_media.txt`, `config/v1.1_config.json` (Set Up For Bot Auto Tweet Trending V1.1)
+    * `tweet.txt`, `config/bottext_config.json` (Set Up For Bot Auto Tweet - Txt File)
+    * `posted_rss_links.txt`, `config/botrss_config.json` (Set Up For Bot Auto Tweet - RSS Feed)
+    * `image_list.txt`, `tweets_image.txt`, `config/botimage_config.json` (Set Up For Bot Tweet + Gambar)
+    * `config/autonews_config.json` (Set Up For Auto Tweet News AI)
 
 ### GitHub Secrets Setup
 This bot requires secrets to function. Go to your repository's **Settings > Secrets and variables > Actions**.
