@@ -2,15 +2,21 @@ name: Bot Auto Tweet - News Trending
 
 on:
   schedule:
-    # Menjalankan setiap 2 jam sekali
+    # Menjalankan setiap 2 jam sekali pada menit ke-0
+    # Anda bisa ubah jadwalnya sesuai kebutuhan (misal: '0 */3 * * *' untuk setiap 3 jam)
     - cron: '0 */2 * * *'
   workflow_dispatch:
+
+# Mencegah workflow berjalan tumpang tindih untuk menghindari error
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
-    # --- TAMBAHKAN BLOK INI UNTUK MEMBERI IZIN MENULIS ---
+    # Memberikan izin untuk menulis ke repositori (menyimpan riwayat tren)
     permissions:
       contents: write
 
@@ -29,14 +35,15 @@ jobs:
           pip install tweepy requests beautifulsoup4 google-generativeai
           
       - name: Run Auto News Bot
+        run: python dist/bot_autonews.py
         env:
+          # Pastikan semua secret ini sudah diatur di Pengaturan Repositori
           BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-        run: python dist/bot_autonews.py
           
       - name: Configure Git and Push History
         run: |
@@ -45,6 +52,7 @@ jobs:
           if [[ -n $(git status --porcelain news_posted_trends.txt) ]]; then
             git add news_posted_trends.txt
             git commit -m "Update posted news trends history"
+            git pull --rebase
             git push
             echo "✅ Riwayat tren berita telah diperbarui."
           else
