@@ -1,5 +1,4 @@
-text: 🎬 test tweet
-Durasi: 0 Menit https://x.com/jaemitie/status/1931413524959691085/video/1 <--- letak link video dari x, agar tweet memuat videonya
+text: مرحبًا 안녕하세요
 Link Movie: 🔗 https://google.com
 
 
