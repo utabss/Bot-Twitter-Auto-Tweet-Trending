@@ -1,0 +1,6 @@
+{
+  "text_tweets_file": "tweets_image.txt",
+  "image_list_file": "image_list.txt",
+  "trending_limit": 5,
+  "scrape_url": "https://www.trends24.in/indonesia/"
+}
