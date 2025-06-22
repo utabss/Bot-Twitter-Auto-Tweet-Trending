@@ -1,0 +1,6 @@
+{
+  "rss_feed_url": "https://linkblog.com/feed/rss",
+  "posted_links_history_file": "posted_rss_links.txt",
+  "trending_limit": 5,
+  "scrape_url": "https://www.trends24.in/indonesia/"
+}
