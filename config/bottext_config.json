@@ -1,0 +1,5 @@
+{
+  "tweets_file": "tweet.txt",
+  "trending_limit": 5,
+  "scrape_url": "https://www.trends24.in/indonesia/"
+}
