@@ -1,4 +1,4 @@
-text: (isi text kamu)
+text: test 안녕하세요 (isi text kamu)
 Link Movie: 🔗 https://google.com
 
 
