@@ -4,7 +4,7 @@ on:
   schedule:
     # Menjalankan setiap 2 jam sekali pada menit ke-0
     # Anda bisa ubah jadwalnya sesuai kebutuhan (misal: '0 */3 * * *' untuk setiap 3 jam)
-    - cron: '0 */2 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 # Mencegah workflow berjalan tumpang tindih untuk menghindari error
